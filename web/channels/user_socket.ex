@@ -2,7 +2,7 @@ defmodule Blat.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "rooms:*", Blat.RoomChannel
+  channel "post:*", Blat.PostChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket

@@ -8,3 +8,23 @@
 
 <%= link "Edit", to: post_path(@conn, :edit, @post) %>
 <%= link "Back", to: post_path(@conn, :index) %>
+
+
+<h4>Chat</h4>
+
+<div id="messages">
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <input type="text" class="form-control" id="nick" placeholder="nick" />
+  </div>
+
+  <div class="col-md-9">
+    <input type="text" class="form-control" id="message" placeholder="message" />
+  </div>
+</div>
+
+<script type="text/javascript">
+  window.__post_id = <%= @post.id %>;
+</script>
