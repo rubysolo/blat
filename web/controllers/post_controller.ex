@@ -29,7 +29,7 @@ defmodule Blat.PostController do
   end
 
   def create(conn, %{} = params) do
-    # yell 
+    # yell
   end
 
   def show(conn, %{"id" => id}) do
